@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-200 font-sans;
+  }
+}
+
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;600&display=swap');
+
+.brand-font, h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1e293b; 
+}
+::-webkit-scrollbar-thumb {
+  background: #3b82f6; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #60a5fa; 
+}
+
+.perspective-container {
+  perspective: 1000px;
+}
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
